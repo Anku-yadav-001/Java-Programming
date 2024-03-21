@@ -24,4 +24,5 @@ public class Inheritance {
         this.w=side.w;
         this.h=side.h;
     }
+    
 }

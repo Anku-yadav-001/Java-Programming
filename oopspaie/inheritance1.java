@@ -19,5 +19,12 @@ public class inheritance1 {
         Weight obj5=new Weight();
         System.out.println(obj5.l+" "+obj5.w+" "+obj5.h+" "+obj5.weight);
 
+    //object for inherit the properties
+       Weight obj6=new Weight(5,6,7,6);
+       System.out.println(obj6.l+" "+obj6.w+" "+obj6.h+" "+obj6.weight);
+
+    //copy constructor with the super class
+        Weight obj7=new Weight(obj6);
+        System.out.println(obj7.weight);
     }
 }
