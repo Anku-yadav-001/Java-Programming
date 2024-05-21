@@ -1,0 +1,20 @@
+//stack height = n
+public class power {
+    public static int calcPower(int x, int n){
+        if(x==0){
+            return 0;
+        }
+        if(n==0){
+            return 1;
+        }
+        int ans=calcPower(x, n-1);
+        int cpower=x*ans;
+        return cpower;
+    }
+    public static void main(String[] args) {
+        int x=2;
+        int n=5;
+        int result=calcPower(x, n);
+        System.out.println(result);
+    }
+}
